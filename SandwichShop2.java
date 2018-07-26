@@ -21,6 +21,7 @@ public class SandwichShop2
         keyboard.skip ("\n");
         if (goalA >= goalForVeggies){
             out.println ("Made Goal!");
+
         }
         else {
             out.println ("Fell Short");
@@ -43,7 +44,7 @@ public class SandwichShop2
         int goalC;
         goalC = keyboard.nextInt();
         keyboard.skip ("\n");
-        if (goalC >= goalForSubs){
+        if (goalC >= goalForSubs)  {
             out.println ("Made Goal!");
         }
         else {
@@ -61,13 +62,17 @@ public class SandwichShop2
         else {
             out.println ("Fell Short");
         }
+            boolean finalGoal= (goalA >= goalForVeggies)&&(goalB >= goalForBurgers)&&(goalC >= goalForSubs)&&(goalD >= goalForSoups);
+        if (finalGoal==true)
 
-        int finalGoal;
-        finalGoal = goalA + goalB + goalC + goalD;
-
-        if (finalGoal >= 550){
+        //int finalGoal;
+       // finalGoal = goalA + goalB + goalC + goalD;
+       // if (finalGoal >= 550){
             out.println ("Made goal for everything!");
-        }
+
+        //
+
+
 
         //total goals up, if greater than or equal to 550, print out made goal for everything!!
        // boolean result = (goalA == goalForVeggies);
